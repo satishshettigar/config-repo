@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/satishshettigar/config-repo
+          search-paths: native
+          default-label: native
+
+message: Hello from ..!
